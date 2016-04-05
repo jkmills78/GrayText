@@ -1,7 +1,7 @@
-﻿<Application x:Class="Gray_Text.App"
+﻿<Application x:Class="GrayText.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Gray_Text"
+             xmlns:local="clr-namespace:GrayText"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

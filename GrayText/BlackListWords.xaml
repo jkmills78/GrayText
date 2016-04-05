@@ -1,0 +1,26 @@
+﻿<Window x:Class="GrayText.BlackListWords"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GrayText"
+        mc:Ignorable="d"
+        Title="BlackListWords" Height="300" Width="300">
+    <Grid>
+        <ListView x:Name="listView" HorizontalAlignment="Stretch" Margin="10,10,10,38" VerticalAlignment="Stretch">
+            <ListView.View>
+                <GridView AllowsColumnReorder="False">
+                    <GridViewColumn Header="Words"/>
+                </GridView>
+            </ListView.View>
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Remove" Click="onRemoveClick" />
+                </ContextMenu>
+            </ListView.ContextMenu>
+        </ListView>
+        <TextBox x:Name="wordToAdd" HorizontalAlignment="Stretch" Height="23" Margin="10,0,58,10" TextWrapping="Wrap" VerticalAlignment="Bottom" RenderTransformOrigin="0.488,-0.62"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="43" Height="23" Click="onAddClick"/>
+
+    </Grid>
+</Window>

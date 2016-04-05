@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Gray_Text
+namespace GrayText
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,13 +23,14 @@ namespace Gray_Text
         private TextCheck textCheck;
         private StringBuilder stringBuilder;
         private string lastWord;
-
+        private Data data;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            textCheck = new TextCheck();
+            data = new Data();
+            textCheck = new TextCheck(data);
             lastWord = string.Empty;
             stringBuilder = new StringBuilder();
             textBox.Focus();
@@ -57,6 +58,17 @@ namespace Gray_Text
             {
                 lastWord += textBox.ToString().LastOrDefault();
             }
+        }
+
+        private void onBlackListWordsClick(object sender, RoutedEventArgs e)
+        {
+            BlackListWords window = new BlackListWords(data);
+            window.ShowDialog();
+        }
+
+        private void onSave(object sender, RoutedEventArgs e)
+        {
+            data.SaveFile(textBox.Text.ToString());
         }
     }
 }

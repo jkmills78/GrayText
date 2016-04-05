@@ -1,32 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data;
+using System.Data.Linq;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace Gray_Text
+namespace GrayText
 {
     public class TextCheck
     {
-        private List<string> blackList;
+        private Data data;
 
-        public TextCheck()
+        public TextCheck(Data data)
         {
-            blackList = new List<string>();
-
-            // Initliaize black list
-            blackList.Add("the");
-            blackList.Add("and");
-            blackList.Add("a");
-            blackList.Add("of");
-            blackList.Add("MySuperLongTextTestString");
+            this.data = data;
         }
 
         public bool BadWord(string str)
         {
-            if (blackList.Contains(str.ToLower()))
+            if (data.blackListWords.Contains(str.ToLower()))
                 return true;
             else
                 return false;

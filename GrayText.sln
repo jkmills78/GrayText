@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gray Text", "Gray Text\Gray Text.csproj", "{98557945-F2B6-495A-B756-BAB5B43833FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrayText", "GrayText\GrayText.csproj", "{98557945-F2B6-495A-B756-BAB5B43833FC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GrayTextSetup", "GrayTextSetup\GrayTextSetup.vdproj", "{BCF05DC9-7A16-49AF-A85C-12FB38336043}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{98557945-F2B6-495A-B756-BAB5B43833FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98557945-F2B6-495A-B756-BAB5B43833FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98557945-F2B6-495A-B756-BAB5B43833FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF05DC9-7A16-49AF-A85C-12FB38336043}.Debug|Any CPU.ActiveCfg = Debug
+		{BCF05DC9-7A16-49AF-A85C-12FB38336043}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
