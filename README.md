@@ -1,6 +1,6 @@
 # GrayText: Text editor with word filtering
 
-GrayText is a simple text editor design to filter out a user-defined word list.  Once finished, the text can be saved out to a standard text file.
+GrayText is a simple text editor design to filter out a user-defined word list, in real-time while the user is typing.  The end result is that only unfiltered words can be typed into the editor.  Once finished, the text can be saved out to a standard text file.
 
 ## System Requirements
 
